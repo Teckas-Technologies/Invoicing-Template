@@ -7,6 +7,7 @@ import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { Navbar, VersionDisplay } from "@/components/common";
 import { Provider } from "@/utils/context";
 import { rainbowKitConfig } from "@/utils/wagmiConfig";
+import Script from "next/script";
 
 import "@/styles/globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
