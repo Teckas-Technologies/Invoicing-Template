@@ -7,7 +7,6 @@ import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { Navbar, VersionDisplay } from "@/components/common";
 import { Provider } from "@/utils/context";
 import { rainbowKitConfig } from "@/utils/wagmiConfig";
-import Script from "next/script";
 
 import "@/styles/globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
@@ -19,7 +18,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <div className={`${montserrat.className}`}>
-      <Script id="chatbot" data-agent-id="67518624b0b24db33b575d1b" data-account-id={"0xFf43E33C40276FEEff426C5448cF3AD9df6b5741"} src="https://script-sepia.vercel.app/ChatBot.js"></Script>
       <WagmiProvider config={rainbowKitConfig}>
         <QueryClientProvider client={queryClient}>
           <RainbowKitProvider>
