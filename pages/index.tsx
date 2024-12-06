@@ -20,7 +20,7 @@ export default function InvoiceDashboardPage() {
         <title>Request Invoicing</title>
       </Head>
       <div className="container m-auto  w-[100%]">
-      <Script id="chatbot" data-agent-id="675256f63c27ef9e9279dce7" src="https://script-sepia.vercel.app/ChatBot.js"></Script>
+      <Script id="chatbot" data-agent-id="67525edd86ddc08fcdd437b0" src="https://script-sepia.vercel.app/ChatBot.js"></Script>
         <InvoiceDashboard
           config={config}
           currencies={currencies}
